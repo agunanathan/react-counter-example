@@ -9,6 +9,7 @@ export default function Counter( {initialCount}) {
         </button>
         <span> {count} </span>
         <button onClick={() => setCount(prevCount => prevCount +1)}>+</button>
+        <button onClick={() => setCount(prevCount => prevCount - prevCount)}> Reset </button>
     </div>
   )
 }
